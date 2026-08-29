@@ -14,6 +14,17 @@ itself carries a banner saying so (`src/components/DraftBanner.tsx`) —
 remove that banner only once the family has actually reviewed and signed
 off on the content, especially the Legacy of Uncle Robert timeline.
 
+**Branch layout, deliberately**: all real work happens on the
+[`proposal`](https://github.com/RastaRooster808/uncle-roberts-website/tree/proposal)
+branch, not `main`. `main` is kept as a stub until the family approves —
+nothing gets merged there, and no custom domain (`uncleroberts.website`)
+is claimed from a branch that hasn't been signed off on. `proposal`
+deploys to GitHub Pages at its own project URL (see the Pages tab of this
+repo, or the Actions run for the live link) — that link is the current
+draft to review, not tied to the eventual production domain. Once the
+family approves, merge `proposal` → `main`, restore `public/CNAME`, and
+switch the deploy workflow's trigger branch back to `main`.
+
 ## What's real vs. placeholder
 
 **Verified** (from public listings, photos of the actual market, and
