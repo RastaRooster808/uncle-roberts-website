@@ -1,3 +1,4 @@
+import { DraftBanner } from './components/DraftBanner';
 import { Nav } from './components/Nav';
 import { Hero } from './components/Hero';
 import { ThisWeek } from './components/ThisWeek';
@@ -11,6 +12,7 @@ import { Footer } from './components/Footer';
 export function App() {
   return (
     <div>
+      <DraftBanner />
       <Nav />
       <Hero />
       <ThisWeek />

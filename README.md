@@ -9,6 +9,11 @@ and deploys cleanly, and every section is real UI — but a lot of the copy
 is intentionally placeholder, clearly marked, until the family provides
 real material.
 
+**Status: proposal, awaiting family review and approval.** The live site
+itself carries a banner saying so (`src/components/DraftBanner.tsx`) —
+remove that banner only once the family has actually reviewed and signed
+off on the content, especially the Legacy of Uncle Robert timeline.
+
 ## What's real vs. placeholder
 
 **Verified** (from public listings, photos of the actual market, and

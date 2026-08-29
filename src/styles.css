@@ -93,6 +93,17 @@ img, svg { display: block; max-width: 100%; }
 .btn-line { background: transparent; border-color: var(--stone); color: var(--cream); }
 .btn-line:hover { border-color: var(--gold); }
 
+/* ── Draft banner ────────────────────────────────────────────────────── */
+.draft-banner {
+  background: var(--gold);
+  color: var(--ink);
+  text-align: center;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.85rem;
+}
+
+.draft-banner strong { font-weight: 800; }
+
 /* ── Nav ─────────────────────────────────────────────────────────────── */
 .nav {
   position: sticky;
