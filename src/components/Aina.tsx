@@ -16,6 +16,12 @@ export function Aina() {
         <ul className="aina-list">
           {AINA_GUIDANCE.map(item => <li key={item}>{item}</li>)}
         </ul>
+
+        <blockquote className="aina-signpost">
+          <p>Puʻuhonua · Kalapana · Kaimū</p>
+          <p>Mahalo ke Akua</p>
+          <p className="aina-signpost-line">The road ends. Aloha begins.</p>
+        </blockquote>
       </div>
     </section>
   );

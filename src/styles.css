@@ -466,6 +466,32 @@ img, svg { display: block; max-width: 100%; }
   top: 0.35rem;
 }
 
+.aina-signpost {
+  margin: 2.4rem 0 0;
+  padding: 1.6rem 1.8rem;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--gold);
+  border-radius: 4px;
+  background: rgba(0,0,0,0.15);
+}
+
+.aina-signpost p {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  color: var(--stone);
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.3rem;
+}
+
+.aina-signpost-line {
+  color: var(--cream) !important;
+  font-size: 1.15rem !important;
+  font-style: italic;
+  margin-top: 0.6rem !important;
+  margin-bottom: 0 !important;
+}
+
 /* ── Visit ───────────────────────────────────────────────────────────── */
 .visit-grid {
   display: grid;
