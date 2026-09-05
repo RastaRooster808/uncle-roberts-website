@@ -1,4 +1,4 @@
-import { SITE, THIS_WEEK } from '../content';
+import { SITE } from '../content';
 
 export function Visit() {
   return (
@@ -17,7 +17,7 @@ export function Visit() {
             </div>
             <div className="visit-fact">
               <p className="visit-fact-label">When</p>
-              <p className="visit-fact-value">{THIS_WEEK.day} nights, live music ~6–9pm</p>
+              <p className="visit-fact-value">Wednesday nights (live music ~6–9pm) and Saturday mornings (8am–12pm)</p>
             </div>
             <div className="visit-fact">
               <p className="visit-fact-label">Parking</p>

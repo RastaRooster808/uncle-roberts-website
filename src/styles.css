@@ -221,6 +221,12 @@ img, svg { display: block; max-width: 100%; }
 }
 
 /* ── This Week card ──────────────────────────────────────────────────── */
+.week-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.4rem;
+}
+
 .week-card {
   background: var(--ground-alt);
   border: 1px solid var(--rule);
@@ -384,6 +390,35 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .sources-list a:hover { color: var(--gold); border-color: var(--gold); }
+
+/* ── Photo gallery ───────────────────────────────────────────────────── */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.photo-card {
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-card figcaption {
+  padding: 0.7rem 1rem;
+  font-size: 0.85rem;
+  color: var(--stone);
+  background: var(--ground-alt);
+}
 
 /* ── Card grid (vendors, music, gallery) ────────────────────────────── */
 .card-grid {

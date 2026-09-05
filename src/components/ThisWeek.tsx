@@ -1,4 +1,4 @@
-import { THIS_WEEK } from '../content';
+import { MARKET_DAYS } from '../content';
 
 const CHIPS = [
   { emoji: '🎸', label: 'Live Music' },
@@ -15,7 +15,7 @@ export function ThisWeek() {
       <div className="container">
         <div className="section-head">
           <p className="eyebrow">What's Happening</p>
-          <h2>{THIS_WEEK.day} Night</h2>
+          <h2>Two Market Days</h2>
         </div>
 
         <div className="chip-grid">
@@ -26,24 +26,28 @@ export function ThisWeek() {
           ))}
         </div>
 
-        <div className="week-card">
-          <div className="week-head">
-            <h3>This Week at Uncle Robert's</h3>
-            <span className="week-badge">{THIS_WEEK.day} · Kalapana</span>
-          </div>
-          <div className="week-timeline">
-            {THIS_WEEK.rows.map(r => (
-              <div className="week-row" key={r.time}>
-                <span className="week-time">{r.time}</span>
-                <span className="week-what">{r.what}</span>
+        <div className="week-card-grid">
+          {MARKET_DAYS.map(day => (
+            <div className="week-card" key={day.day}>
+              <div className="week-head">
+                <h3>{day.day}</h3>
+                <span className="week-badge">{day.badge}</span>
               </div>
-            ))}
-            <div className="week-row">
-              <span className="week-time">Cover</span>
-              <span className="week-what">{THIS_WEEK.cover}</span>
+              <div className="week-timeline">
+                {day.rows.map(r => (
+                  <div className="week-row" key={r.time}>
+                    <span className="week-time">{r.time}</span>
+                    <span className="week-what">{r.what}</span>
+                  </div>
+                ))}
+                <div className="week-row">
+                  <span className="week-time">Cover</span>
+                  <span className="week-what">{day.cover}</span>
+                </div>
+              </div>
+              <p className="week-fine">{day.note}</p>
             </div>
-          </div>
-          <p className="week-fine">{THIS_WEEK.note}</p>
+          ))}
         </div>
       </div>
     </section>

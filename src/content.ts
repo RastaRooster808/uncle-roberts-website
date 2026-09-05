@@ -25,24 +25,37 @@ export interface WeekRow {
   what: string;
 }
 
-export interface ThisWeek {
+export interface MarketDay {
   day: string;
+  badge: string;
   rows: WeekRow[];
   cover: string;
   note: string;
 }
 
-export const THIS_WEEK: ThisWeek = {
-  day: 'Wednesday',
-  rows: [
-    { time: '~4pm', what: 'Market opens — food, produce, crafts' }, // VERIFIED (general window)
-    { time: '~6–9pm', what: 'Live music & dancing' }, // VERIFIED
-    { time: '~10pm', what: 'Winds down' }, // VERIFIED (general window)
-  ],
-  cover: 'Varies — check Facebook for this week', // PLACEHOLDER — needs current confirmation
-  note:
-    "Hours, cover charge, and who's playing shift week to week. This panel is meant to be edited directly by whoever runs the market — until then, confirm on Facebook before you head out.",
-};
+export const MARKET_DAYS: MarketDay[] = [
+  {
+    day: 'Wednesday Night',
+    badge: 'Wednesday · Kalapana',
+    rows: [
+      { time: '~4pm', what: 'Market opens — food, produce, crafts' }, // VERIFIED (general window)
+      { time: '~6–9pm', what: 'Live music & dancing' }, // VERIFIED
+      { time: '~10pm', what: 'Winds down' }, // VERIFIED (general window)
+    ],
+    cover: 'Varies — check Facebook for this week', // PLACEHOLDER — needs current confirmation
+    note:
+      "Hours, cover charge, and who's playing shift week to week. This panel is meant to be edited directly by whoever runs the market — until then, confirm on Facebook before you head out.",
+  },
+  {
+    day: 'Saturday Market',
+    badge: 'Saturday · 8am–12pm',
+    rows: [
+      { time: '8am–12pm', what: 'Farmers market — produce, crafts, plate lunch' }, // VERIFIED — confirmed directly
+    ],
+    cover: 'Free to browse the market',
+    note: 'A quieter, daytime version of the market — no live music set, just produce, crafts, and food.',
+  },
+];
 
 export type SourceTag = 'Documented History' | 'Family Oral History' | 'Later Development';
 
@@ -171,6 +184,26 @@ export const VENDOR_EXAMPLES: VendorCard[] = [
   { name: 'Example: Plate Lunch Vendor', category: 'Hawaiian', desc: 'Placeholder card — swap in a real vendor profile.' },
   { name: 'Example: Produce Table', category: 'Local Produce', desc: 'Placeholder card — swap in a real vendor profile.' },
   { name: 'Example: Smoothie Stand', category: 'Drinks', desc: 'Placeholder card — swap in a real vendor profile.' },
+];
+
+export interface MarketPhoto {
+  src: string;
+  alt: string;
+  caption: string;
+}
+
+/** VERIFIED — real photos from the Saturday market (8am–12pm), confirmed by the person who shared them. */
+export const MARKET_PHOTOS: MarketPhoto[] = [
+  {
+    src: './images/saturday-market-table.jpg',
+    alt: 'Produce and handmade crafts on tables at the Saturday market',
+    caption: 'Saturday market, 8am–12pm — produce and local crafts',
+  },
+  {
+    src: './images/saturday-market-merch.jpg',
+    alt: 'Tie-dye and Kalapana-themed t-shirts hanging at a vendor tent',
+    caption: 'Local apparel at a Saturday vendor tent',
+  },
 ];
 
 export const AINA_GUIDANCE = [

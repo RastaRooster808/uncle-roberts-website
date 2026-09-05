@@ -1,4 +1,4 @@
-import { VENDOR_EXAMPLES } from '../content';
+import { VENDOR_EXAMPLES, MARKET_PHOTOS } from '../content';
 
 const CUISINES = ['Hawaiian', 'Filipino', 'Japanese', 'Korean', 'Chinese', 'Thai', 'Mexican', 'Local Produce'];
 
@@ -15,6 +15,15 @@ export function Eat() {
             below are placeholders; real vendor profiles (photo, menu, socials,
             which days they're usually there) come from market staff.
           </p>
+        </div>
+
+        <div className="photo-grid">
+          {MARKET_PHOTOS.map(p => (
+            <figure className="photo-card" key={p.src}>
+              <img src={p.src} alt={p.alt} loading="lazy" />
+              <figcaption>{p.caption}</figcaption>
+            </figure>
+          ))}
         </div>
 
         <div className="chip-grid">
