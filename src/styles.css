@@ -234,6 +234,22 @@ img, svg { display: block; max-width: 100%; }
   padding: 2.2rem;
   display: grid;
   gap: 1.6rem;
+  overflow: hidden;
+}
+
+.week-photo {
+  width: calc(100% + 4.4rem);
+  margin: -2.2rem -2.2rem 0;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.week-visitor-note {
+  margin-top: 1.6rem;
+  font-size: 0.88rem;
+  color: var(--stone);
+  text-align: center;
 }
 
 .week-head {
@@ -550,11 +566,45 @@ img, svg { display: block; max-width: 100%; }
 }
 .visit-fact-value { font-size: 1.05rem; }
 
+.qr-stack {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.qr-card {
+  background: var(--cream);
+  border-radius: 18px;
+  padding: 1.6rem;
+  text-align: center;
+}
+
+.qr-card img {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 0.8rem;
+  background: #fff;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.qr-card p {
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.qr-card-fine {
+  font-weight: 400 !important;
+  font-size: 0.8rem !important;
+  color: var(--stone) !important;
+  margin-top: 0.2rem;
+}
+
 .map-placeholder {
   background: var(--ground-alt);
   border: 1px dashed var(--rule);
   border-radius: 18px;
-  min-height: 320px;
+  min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;

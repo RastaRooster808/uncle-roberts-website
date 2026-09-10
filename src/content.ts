@@ -18,7 +18,14 @@ export const SITE = {
     'https://www.google.com/maps/search/?api=1&query=' +
     encodeURIComponent('12-5038 Kalapana-Kapoho Beach Rd, Pāhoa, HI 96778'),
   facebookUrl: 'https://www.facebook.com/pages/Kalapana-uncle-Roberts-awa-bar/148739125185258', // VERIFIED
+  instagramHandle: '@kaimu.community.makeke', // VERIFIED — from the market's own Instagram QR share screen
+  instagramUrl: 'https://www.instagram.com/kaimu.community.makeke/', // VERIFIED
 };
+
+/** VERIFIED — read directly off the market's Instagram profile/bio screen. */
+export const VISITOR_NOTES = [
+  'Cash is safest — the market currently cannot process any SNAP/EBT transactions.',
+];
 
 export interface WeekRow {
   time: string;
@@ -31,6 +38,7 @@ export interface MarketDay {
   rows: WeekRow[];
   cover: string;
   note: string;
+  photo?: { src: string; alt: string };
 }
 
 export const MARKET_DAYS: MarketDay[] = [
@@ -45,6 +53,10 @@ export const MARKET_DAYS: MarketDay[] = [
     cover: 'Varies — check Facebook for this week', // PLACEHOLDER — needs current confirmation
     note:
       "Hours, cover charge, and who's playing shift week to week. This panel is meant to be edited directly by whoever runs the market — until then, confirm on Facebook before you head out.",
+    photo: {
+      src: './images/live-music-band.jpg',
+      alt: 'A live band playing guitar, mandolin, and upright bass under the awa bar pavilion, with the Hawaiʻi state flag behind them',
+    },
   },
   {
     day: 'Saturday Market',
@@ -203,6 +215,16 @@ export const MARKET_PHOTOS: MarketPhoto[] = [
     src: './images/saturday-market-merch.jpg',
     alt: 'Tie-dye and Kalapana-themed t-shirts hanging at a vendor tent',
     caption: 'Local apparel at a Saturday vendor tent',
+  },
+  {
+    src: './images/vendor-cards.jpg',
+    alt: 'A vendor selling hand-painted greeting cards and framed art',
+    caption: 'Hand-painted greeting cards and art, market day',
+  },
+  {
+    src: './images/vendor-hats.jpg',
+    alt: 'A vendor table covered in hats alongside local artwork',
+    caption: 'One of the craft and apparel tents',
   },
 ];
 

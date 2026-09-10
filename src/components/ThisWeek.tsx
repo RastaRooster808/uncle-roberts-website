@@ -1,4 +1,4 @@
-import { MARKET_DAYS } from '../content';
+import { MARKET_DAYS, VISITOR_NOTES } from '../content';
 
 const CHIPS = [
   { emoji: '🎸', label: 'Live Music' },
@@ -29,6 +29,9 @@ export function ThisWeek() {
         <div className="week-card-grid">
           {MARKET_DAYS.map(day => (
             <div className="week-card" key={day.day}>
+              {day.photo && (
+                <img className="week-photo" src={day.photo.src} alt={day.photo.alt} loading="lazy" />
+              )}
               <div className="week-head">
                 <h3>{day.day}</h3>
                 <span className="week-badge">{day.badge}</span>
@@ -49,6 +52,12 @@ export function ThisWeek() {
             </div>
           ))}
         </div>
+
+        {VISITOR_NOTES.length > 0 && (
+          <p className="week-visitor-note">
+            {VISITOR_NOTES.map(n => <span key={n}>ℹ️ {n}</span>)}
+          </p>
+        )}
       </div>
     </section>
   );

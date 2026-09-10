@@ -7,6 +7,7 @@ export function Footer() {
         <div className="footer-links">
           <a href={SITE.mapsUrl} target="_blank" rel="noopener noreferrer">Directions</a>
           <a href={SITE.facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href={SITE.instagramUrl} target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="#top">Back to Top</a>
         </div>
         <p>

@@ -26,13 +26,21 @@ export function Visit() {
             <div className="hero-actions" style={{ justifyContent: 'flex-start', marginTop: '1.6rem' }}>
               <a className="btn btn-primary" href={SITE.mapsUrl} target="_blank" rel="noopener noreferrer">Get Directions</a>
               <a className="btn btn-line" href={SITE.facebookUrl} target="_blank" rel="noopener noreferrer">Follow on Facebook ↗</a>
+              <a className="btn btn-line" href={SITE.instagramUrl} target="_blank" rel="noopener noreferrer">Follow on Instagram ↗</a>
             </div>
           </div>
 
-          <div className="map-placeholder">
-            An interactive "Explore Kalapana" map — Uncle's, the awa bar, the
-            market, the music stage, parking, Kaimū, Black Sand Beach — is
-            planned here as a follow-up build. For now, use Get Directions.
+          <div className="qr-stack">
+            <div className="qr-card">
+              <img src="./images/instagram-qr.svg" alt={`QR code linking to ${SITE.instagramHandle} on Instagram`} />
+              <p>{SITE.instagramHandle}</p>
+              <p className="qr-card-fine">Scan to follow on Instagram</p>
+            </div>
+            <div className="map-placeholder">
+              An interactive "Explore Kalapana" map — Uncle's, the awa bar, the
+              market, the music stage, parking, Kaimū, Black Sand Beach — is
+              planned here as a follow-up build. For now, use Get Directions.
+            </div>
           </div>
         </div>
       </div>
