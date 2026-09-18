@@ -222,6 +222,11 @@ export const MARKET_PHOTOS: MarketPhoto[] = [
     caption: 'Hand-painted greeting cards and art, market day',
   },
   {
+    src: './images/market-drinks.jpg',
+    alt: 'A vendor pouring a fresh drink from a large glass dispenser for a customer at the market',
+    caption: 'Fresh drinks at the market — talking story while it pours',
+  },
+  {
     src: './images/vendor-hats.jpg',
     alt: 'A vendor table covered in hats alongside local artwork',
     caption: 'One of the craft and apparel tents',
