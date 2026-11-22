@@ -207,6 +207,11 @@ export interface MarketPhoto {
 /** VERIFIED — real photos from the Saturday market (8am–12pm), confirmed by the person who shared them. */
 export const MARKET_PHOTOS: MarketPhoto[] = [
   {
+    src: './images/uncle-roberts-storefront.jpg',
+    alt: "The entrance to Uncle Robert's, with the Kingdom of Hawaiʻi seal and awa bar signage",
+    caption: "Uncle Robert's — the entrance off Kalapana Kapoho Beach Rd",
+  },
+  {
     src: './images/saturday-market-table.jpg',
     alt: 'Produce and handmade crafts on tables at the Saturday market',
     caption: 'Saturday market, 8am–12pm — produce and local crafts',
@@ -230,6 +235,11 @@ export const MARKET_PHOTOS: MarketPhoto[] = [
     src: './images/vendor-hats.jpg',
     alt: 'A vendor table covered in hats alongside local artwork',
     caption: 'One of the craft and apparel tents',
+  },
+  {
+    src: './images/market-pastry.jpg',
+    alt: 'A glazed, brown-sugar-topped pastry from a market bakery vendor',
+    caption: 'Fresh-baked goods from one of the market bakers',
   },
 ];
 
