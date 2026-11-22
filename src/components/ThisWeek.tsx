@@ -49,6 +49,15 @@ export function ThisWeek() {
                 </div>
               </div>
               <p className="week-fine">{day.note}</p>
+              {day.day === 'Saturday Market' && (
+                <a
+                  className="btn btn-gold week-flyer-btn"
+                  href="./images/saturday-market-flyer.jpg"
+                  download="Uncle Roberts Saturday Market Flyer.jpg"
+                >
+                  Download Flyer
+                </a>
+              )}
             </div>
           ))}
         </div>

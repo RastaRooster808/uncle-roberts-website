@@ -293,6 +293,13 @@ img, svg { display: block; max-width: 100%; }
 
 .week-what { font-size: 1rem; }
 
+.week-flyer-btn {
+  justify-self: start;
+  align-self: start;
+  padding: 0.7rem 1.4rem;
+  font-size: 0.88rem;
+}
+
 .week-fine {
   font-size: 0.85rem;
   color: var(--stone);
